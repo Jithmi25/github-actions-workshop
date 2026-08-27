@@ -1,0 +1,32 @@
+name: CI
+
+# When should this workflow run?
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: Run unit tests
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Get the repo's code onto the runner
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Install Node.js on the runner
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # 3. Install dependencies (none yet, but good practice)
+      - name: Install dependencies
+        run: npm install
+
+      # 4. Run the test suite
+      - name: Run tests
+        run: npm test

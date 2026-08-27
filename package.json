@@ -1,7 +1,10 @@
 {
   "name": "github-actions-workshop",
   "version": "1.0.0",
+  "description": "Hands-on workshop repo for learning GitHub Actions basics and CI workflows",
+  "main": "src/app.js",
   "scripts": {
     "test": "node src/app.test.js"
-  }
+  },
+  "license": "MIT"
 }
