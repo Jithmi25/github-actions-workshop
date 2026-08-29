@@ -169,17 +169,6 @@ them in that exact folder.
 
 ---
 
-## 🌟 Stretch goals (if you finish early)
-
-Pick any of these to try on your own fork:
-
-- **Add a status badge** to this README showing the workflow's pass/fail state
-- **Run on multiple Node.js versions** using a build matrix
-- **Only trigger on `src/` changes** by scoping the `push`/`pull_request` triggers with `paths:`
-- **Add a second job** that runs a linter (e.g. `eslint`) alongside the tests
-
----
-
 ## 📖 Cheat sheet: workflow file anatomy
 
 ```yaml
